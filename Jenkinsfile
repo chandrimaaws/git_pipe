@@ -6,11 +6,19 @@ pipeline {
   }
 
   stages {
-    stage('Say Hello') {
+    stage('Cloning....') {
       agent any
 
       steps {
          echo "My Branch Name: ${env.BRANCH_NAME}:${env.BUILD_NUMBER}"
+      }
+    }
+    
+    stage('Deploying using chef....') {
+      agent any
+
+      steps {
+         echo "deploying..."
       }
     }
   }
