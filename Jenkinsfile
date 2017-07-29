@@ -10,7 +10,7 @@ pipeline {
       agent any
 
       steps {
-         echo "My Branch Name: ${env.BRANCH_NAME}"
+         echo "My Branch Name: ${env.BRANCH_NAME}:${env.BUILD_NUMBER}"
       }
     }
   }
