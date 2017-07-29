@@ -10,8 +10,8 @@ pipeline {
       agent any
 
       steps {
-        sayHello 'Awesome Student!'
+         echo "My Branch Name: ${env.BRANCH_NAME}"
       }
     }
   }
-}  
+}
